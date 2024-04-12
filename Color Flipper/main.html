@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Color Flipper</title>
+        <!--Font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Whisper&display=swap" rel="stylesheet">
+        <!--CSS-->
+        <style>
+            h1 {
+                text-align: center;
+                font-family: "Amatic SC", sans-serif;
+                font-weight: 700;
+                font-size: 5em;
+            }
+            .flexbox {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            button {
+                margin: 32px;
+                height: 80px;
+                width: 320px;
+                border-radius: 20px;
+                border: 2px solid white;
+                border-width: 3px;
+                font-family: whisper;
+                font-weight: 400;
+                font-size: 2em;
+                color: rgb(0, 0, 0); 
+            }
+            button:hover {
+                color: rgb(108, 107, 107);
+                border: 2px solid rgb(108, 107, 107);
+            }
+            #red{
+                background-color: red;
+            }
+            #blue{
+                background-color: blue;
+            }
+            #green{
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Color Flipper</h1>
+        <div class="flexbox">
+            <button id="red" onclick="setColor('red')">Red</button>
+            <button id="blue" onclick="setColor('blue')">Blue</button>
+            <button id="green" onclick="setColor('green')">Green</button>
+            <button onclick="randomColor()">Random</button>
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
