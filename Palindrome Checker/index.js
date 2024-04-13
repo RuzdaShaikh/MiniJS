@@ -20,10 +20,10 @@ function check() {
 
     span.textContent = ""
  
-    if (value=="") {
+    if (value == "") {
         span.textContent += "Type something!"
     } 
-    else if (value === reverse) {
+    else if (value.toLowerCase() === reverse.toLowerCase()) {
             span.textContent += "P A L I N D R O M E !"
             // alert ("PALINDROME")
     }
