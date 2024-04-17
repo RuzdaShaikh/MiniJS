@@ -17,11 +17,26 @@ const button = document.getElementById("generate")
 
 button.addEventListener("click", generateQuote)
 
-function generateQuote() {
-    const randomIdx = Math.floor(Math.random() * quotes.length)
-    const randomQuote = quotes[randomIdx] 
+window.addEventListener("load", generateQuote)
+window.addEventListener("load", randomColor)
 
-    quoteParagraph.textContent = randomQuote
+
+function generateQuote() {
+    if (usedIndexes.size >= quotes.length) {
+        usedIndexes.clear()
+    }
+
+    while (true) {
+        const randomIdx = Math.floor(Math.random() * quotes.length)
+
+        if (usedIndexes.has(randomIdx)) continue
+
+        const randomQuote = quotes[randomIdx] 
+
+        quoteParagraph.textContent = randomQuote
+        usedIndexes.add(randomIdx)
+        break
+    }
 }
 
 function randomColor() {
