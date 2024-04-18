@@ -4,21 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MiniJS</title>
+    <!-- CSS -->
+    <style>
+        /* fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+        h1 {
+            text-align: center;
+            margin: 30px;
+            font-family: "Lugrasimo", cursive;
+        }
+        p {
+            text-align: center;
+        }
+        a:link, a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            color: blue;
+            text-decoration: underline;
+        }
+        #flexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .flex-items a {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin: 10px;
+            border: 2px solid black;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .flex-items a:link, a:visited {
+            color: black;
+            text-decoration: none;
+        }
+        .flex-items a:hover {
+            color: rgb(92, 101, 104);
+        }
+        span {
+            font-family: "Reenie Beanie", cursive;
+            font-size: 2em;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <h1>MiniJS projects</h1>
-    <div>
-        <div>
-            <a href="/MiniJS/color-flipper/main.html" target="_blank" rel="noopener noreferrer">Color Flipper</a>
+    <p>Projects from <a href="https://www.youtube.com/@TechWithTim">Tech With Tim</a> <a href="https://www.youtube.com/watch?v=2ml4x0rO1PQ&t=3970s&ab_channel=TechWithTim"> -JS projects for beginners</a></p>
+    <div id="flexbox">
+        <div class="flex-items">
+            <a href="/MiniJS/color-flipper/main.html" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.nine10.ca/wp-content/uploads/2012/07/the-meaning-of-colours.jpg" alt="Colors" height="250" width="400">
+                <span>Color Flipper</span>
+            </a>
         </div>
-        <div>
-            <a href="/MiniJS/palindrome-checker/main.html" target="_blank" rel="noopener noreferrer">Color Flipper</a>
+        <div class="flex-items">
+            <a href="/MiniJS/palindrome-checker/main.html" target="_blank" rel="noopener noreferrer">
+                <img src="https://becomeawritertoday.com/wp-content/webp-express/webp-images/uploads/2022/07/Top-Orthography-Rules.jpg.webp" alt="Words" height="250" width="400">
+                <span>Palindrome Checker</span>
+            </a>
         </div>
-        <div>
-            <a href="/MiniJS/random-quote-generator/main.html" target="_blank" rel="noopener noreferrer">Color Flipper</a>
+        <div class="flex-items">
+            <a href="/MiniJS/random-quote-generator/main.html" target="_blank" rel="noopener noreferrer">
+                <img src="https://www.islamicity.org/global/images/photo/IC-Articles/qurantasbihIC__800x533.JPG" alt="Quran" height="250" width="400">
+                <span>Quote Generator</span>
+            </a>
         </div>
-        <div>
-            <a href="/MiniJS/stop-watch/main.html" target="_blank" rel="noopener noreferrer">Color Flipper</a>
+        <div class="flex-items">
+            <a href="/MiniJS/stop-watch/main.html" target="_blank" rel="noopener noreferrer">
+                <img src="https://previews.123rf.com/images/cerberoff/cerberoff1608/cerberoff160800090/62308507-stopwatch-retro-vintage-antiques-macro-closeup-wallpaper-background-value-measure-time-old-clock.jpg" alt="Watch" height="250" width="400">
+                <span>Stop Watch</span>
+            </a>
         </div>
     </div>
 </body>
