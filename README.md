@@ -1,6 +1,6 @@
 #MiniJS
 
-<a href="https://ruzdashaikh.github.io/MiniJS/">Mini JS Projects</a>
+<a href="https://ruzdashaikh.github.io/MiniJS/"><h1>Mini JS Projects</h1></a>
 <p>Projects from <a href="https://www.youtube.com/@TechWithTim">Tech With Tim</a> <a href="https://www.youtube.com/watch?v=2ml4x0rO1PQ&t=3970s&ab_channel=TechWithTim"> -JS projects for beginners</a></p>
 
 1. Color Flipper - <a href="https://ruzdashaikh.github.io/MiniJS/color-flipper/main.html">Demo</a>
