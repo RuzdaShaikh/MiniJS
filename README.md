@@ -7,3 +7,4 @@
 2. Palindrome Checker - <a href="https://ruzdashaikh.github.io/MiniJS/palindrome-checker/main.html">Demo</a>
 3. Quote Generator - <a href="https://ruzdashaikh.github.io/MiniJS/random-quote-generator/main.html">Demo</a>
 4. Stop Watch - <a href="https://ruzdashaikh.github.io/MiniJS/stop-watch/main.html">Demo</a>
+5. To Do List - <a href="https://ruzdashaikh.github.io/MiniJS/to-do-list/main.html">Demo</a>
