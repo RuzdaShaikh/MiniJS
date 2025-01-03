@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <!-- CSS -->
+     <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #BFD7EA;
+        }
+        h1 {
+            color: #0B3954;
+            font-size: 3em;
+        }
+        button {
+            background-color: #53131E;
+            border: none;
+            border-radius: 5px;
+            color: #BFD7EA;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+            padding: 10px 20px;
+            position: relative;
+            z-index: 10;
+        }
+        .move {
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .move:hover {
+            cursor: pointer;
+            background-color: #C08497;
+        }
+        .move img {
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+        }
+        button:hover {
+            background-color: #C08497;
+        }
+        div {
+            margin: 20px;
+        }
+        .moves {
+            display: flex;
+            justify-content: center;
+        }
+        .scoreboard {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            font-size: 1.5em;
+            gap: 10em;
+        }
+        p {
+            color: #333;
+            font-size: 16px;
+        }
+        .winner-msg {
+            background-color: #0B3954;
+            border-radius: 5px;
+            color: #BFD7EA;
+            height: 80vh;
+            font-size: 5em;
+            margin: 20px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .hide {
+            display: none;
+        }
+        #msg {
+            font-size: 2em;
+        }
+        
+     </style>
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <div class="winner-msg hide"></div>
+    <p>Pick your move.</p>
+    <div class="moves">
+        <div class="move" id="rock"><img src="https://t4.ftcdn.net/jpg/10/00/59/65/240_F_1000596544_tGO4nKWpXjP6ouhUEtL2okbqh1BBb7wH.jpg" alt="Rock"></div>
+        <div class="move" id="paper"><img src="https://t4.ftcdn.net/jpg/10/00/59/65/240_F_1000596517_hqwZp5wQ3riqfd1gctumRbiS6fjJXofP.jpg" alt="Paper"></div>
+        <div class="move" id="scissors"><img src="https://t4.ftcdn.net/jpg/10/00/59/65/240_F_1000596526_eLjX7tweUrDnMHzGLvmjzkbjPoW5P9XW.jpg" alt="Scissors"></div>
+    </div>
+    <p id="msg"></p>
+    <div>
+        <div class="scoreboard">
+            <div class="score-container">
+                <div id="playerName">Player</div>
+                <div class="score-box" id="player-score">0</div>
+            </div>
+            <div class="score-container">
+                <div id="computerName">Computer</div>
+                <div class="score-box" id="computer-score">0</div>
+            </div>
+        </div>
+        <button class="reset-btn1">Reset</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
