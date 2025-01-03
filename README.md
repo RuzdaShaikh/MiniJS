@@ -11,3 +11,4 @@
 
 Other Mini JS projects
 - Tic tac Toe game
+- Rock Paper Scissors game
