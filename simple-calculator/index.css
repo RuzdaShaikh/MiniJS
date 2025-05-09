@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=VT323&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width : 20vw;
+    min-width: 250px;
+    height: 60vh;
+    min-height: 400px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid #0a0707;
+    border-radius: 10px;
+    background-color: #CBD4C2;
+}
+
+#display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 15%;
+    padding: 1px 15px;
+    background-color: #5B6C5D;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "VT323", serif;
+}
+input {
+    background-color: #5B6C5D;
+    border: none;
+    text-align: right;
+}
+#output {
+    font-size: 1em;
+    color: black;   
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2%;
+    margin-top: 5%;
+    height: 85%;
+    width: 100%;   
+}
+
+button.operator {
+    background-color: #C3B299;
+}
+button.operator:active {
+    background-color: #C3B299a7;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+    font-family: "Courier Prime", serif;  
+    transition: all 0.2s ease;
+    background-color: #DBEBC0 
+}
+button:active {
+    background-color: #dbebc0a7;
+    transform: scale(0.95);
+}
